@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title></title>
+        <title>Movie Purchase</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Covered+By+Your+Grace|Telex" rel="stylesheet"/>
@@ -22,6 +22,7 @@
         </header>
         
         <form method="post" action="https://formspree.io/failure2fly@gmail.com">
+        <input type="hidden" name="_next" value="//localhost:3000/thankyou.html" />
             <section class="forms">
                 <h2>Shipping Information</h2>
                 <div class="info">
@@ -83,9 +84,10 @@
             </section>
 
             <section class="forms">    
+                <h2>Sign Up!</h2>
                 <div class="sign-up">
                     <input type="checkbox" id "wantsNewsletter" name="wants-newsletter" value="yes" />
-                    <label for="wantsNesletter">Sign up for Newsletter</label><br/>
+                    <label for="wantsNesletter">Sign up for Newsletter</label><br/><br/>
                 </div>
 
                 <label for="email">Email Address</label><br/>
