@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Covered+By+Your+Grace|Telex" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/global.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                        <ul>
+                            <a href="index.html"><strong><div>Home</div></strong></a>
+                            <a href="shop.html"><div>Shop</div></a>
+                            <a href="contact.html"><div>Contact Us</div></a>
+                            <a href="cart.html"><fmt:message key='cart'/> 
+                            <img style="width: 50px; height: 50px;" alt="cart" src="img/cart.jpeg" align="top" vspace="8"> <a (${cart.numberOfItems})><a/>
+                         </ul>
+                </nav>
+        </header>
+        
+        <form method="post" action="https://formspree.io/failure2fly@gmail.com">
+            <section class="forms">
+                <h2>Shipping Information</h2>
+                <div class="info">
+                    <label for="firstName">First Name</label><br/>
+                    <input  type="text" id="firstName" name="first_name" placeholder="Example: John" required/><br/>
+                </div>
+
+                <div class="info">
+                    <label for="lastName">Last Name</label><br/>
+                    <input  type="text" id="lastName" name="last_name" placeholder="Example: Smith" required/><br/>
+                </div>
+                    
+                <div class="info">
+                    <label for="address">Mailing Address</label><br/>
+                    <input  type="text" id="address" name="address" placeholder="Example: 123 Fake St." required/><br/>
+                </div>
+                    
+                <div class="info">
+                    <label for="city">City</label><br/>
+                    <input  type="text" id="city" name="city" placeholder="Example: New York City" required/><br/>
+                </div>
+                
+                <div class="info">
+                    <label for="state">State</label><br/>
+                    <input  type="text" id="state" name="state" placeholder="Example: New York" required/><br/>
+                </div>
+                
+                <div class="info">
+                    <label for="zipcode">Zipcode</label><br/>
+                    <input  type="text" id="zipcode" name="zipcode" placeholder="Example: 12345" required/><br/>
+                </div>
+                
+                <div class="info">
+                    <label for="phone">Phone Number</label><br/>
+                    <input  type="text" id="phone" name="phone" placeholder="Example: 123-456-7890" required/><br/>
+                </div>
+                    
+                <div class="info">
+                    <label for="quantity">Quantity</label>
+                    <select id="quantity" name="quantity">
+                        <option vaule="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div class="info">
+                    <label for="comment">Comments</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </div>
+            </section>
+
+            <section class="forms forms-centered">
+
+                <img width="300" height="450" src="img/donnie_darko.jpg" />
+
+            </section>
+
+            <section class="forms">    
+                <div class="sign-up">
+                    <input type="checkbox" id "wantsNewsletter" name="wants-newsletter" value="yes" />
+                    <label for="wantsNesletter">Sign up for Newsletter</label><br/>
+                </div>
+
+                <label for="email">Email Address</label><br/>
+                <input type="text" id="email" name="email" placeholder="Example: johnsmith@email.com" />
+
+                <div class="sign-up">
+                    <label for="userName">User Name</label><br/>
+                    <input type="text" id="userName" name="userName" required/><br/>
+                </div>
+
+                <div class="sign-up">
+                    <label for="password">Password</label><br/>
+                    <input text="password" type="password" id="password" name="password" required/>
+                </div>
+
+                <div class="sign-up">
+                    <button type="submit">Send</button>
+                </div>
+            </section>
+
+        </form>
+    </body>
+</html>

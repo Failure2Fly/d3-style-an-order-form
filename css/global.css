@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background: darkred;
+}
+nav {
+    background-color: black;
+    font-size: 14px;
+    font-family: georgia;
+    text-align: center;
+    margin: 0 auto;
+    margin-width: 400px;
+}
+ul div {
+    width: 119px;
+    border: solid 1px;
+    float: left;
+    padding: 10px 0;
+    color: white;
+}
+button {
+    margin: 0px 40px 10px 40px;
+    align-self: center;
+    width: 100px;
+}
+/*.column {
+    width: 25%;
+    display: inline-block; 
+    float: left;
+    text-align: left;
+}*/
+
+form {
+    display: flex;
+}
+
+.forms {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    /*margin: 0 auto;*/
+    max-width: 400px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Telex', sans-serif;
+    border-radius: 10px;
+}
+
+.forms-centered {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    margin:10 auto;
+    font-size: 60px;
+    color: White;
+}
+
+.info {
+    padding: 5px;
+    width: 100%;
+}
+
+.sign-up {
+    padding: 5px;
+    width: 100%;
+}
+
+.submit> button{
+    background:dodgerblue;
+    font: white;
+    border: none;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all .3s ease;
+    align-self: center;
+}
+button:hover {
+    transform: scale(1.2);
+    background-color: dodgerblue;
+}
+.forms input[type=text],
+.forms input[type=password]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.1);
+}
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
+.sign-up> input {
+    border-radius: 5px;
+}
+.info> input {
+    border-radius: 5px;
+}
+.sign-up> textarea {
+    width: 100%;
+    border-radius: 5px;
+}
