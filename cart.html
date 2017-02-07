@@ -12,21 +12,30 @@
         <header>
             <nav>
                         <ul>
-                            <a href="index.html"><strong><div>Home</div></strong></a>
-                            <a href="shop.html"><div>Shop</div></a>
-                            <a href="contact.html"><div>Contact Us</div></a>
-                            <a href="cart.html"><fmt:message key='cart'/> 
-                            <img style="width: 50px; height: 50px;" alt="cart" src="img/cart.jpeg" align="top" vspace="8"> <a (${cart.numberOfItems})><a/>
+                            <a href="index.html"><strong><div>Home</div></strong>
+                            </a>
+
+                            <a href="shop.html"><div>Shop</div>
+                            </a>
+
+                            <a href="contact.html"><div>Contact Us</div>
+                            </a>
+
+                            <a href="cart.html">
+
+                            <img style="width: 50px; height: 50px;" alt="cart" src="img/cart.jpeg">
+                            </a>
                          </ul>
                 </nav>
         </header>
         
-        <form type="hidden" method="post" action="https://formspree.io/failure2fly@gmail.com">
-        <input type="hidden" 
-            name="https://failure2fly.github.io/d3-style-an-order-form/thanks.html" value="//site.io/thanks.html" />
+        <form method="post" action="https://formspree.io/failure2fly@gmail.com"> 
+        <!--Myself along with several people (Ragen, Sara, and Manpreet) were unable to figure out how to direct the thank you page via formspree.-->
+        <input type="hidden" name="_next" value="https://failure2fly.github.io/d3-style-an-order-form/thanks.html" />
 
             <section class="forms">
                 <h2>Shipping Information</h2>
+
                 <div class="info">
                     <label for="firstName">First Name</label><br/>
                     <input  type="text" id="firstName" name="first_name" placeholder="Example: John" required/><br/>
@@ -65,7 +74,7 @@
                 <div class="info">
                     <label for="quantity">Quantity</label>
                     <select id="quantity" name="quantity">
-                        <option vaule="1">1</option>
+                        <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -81,15 +90,15 @@
 
             <section class="forms forms-centered">
 
-                <img width="300" height="450" src="img/donnie_darko.jpg" />
+                <img  alt="Donnie Darko" width="300" height="450" src="img/donnie_darko.jpg" />
 
             </section>
 
             <section class="forms">    
                 <h2>Sign Up!</h2>
                 <div class="sign-up">
-                    <input type="checkbox" id "wantsNewsletter" name="wants-newsletter" value="yes" />
-                    <label for="wantsNesletter">Sign up for Newsletter</label><br/><br/>
+                    <input type="checkbox" id="wantsNewsletter" name="wants-newsletter" value="yes" />
+                    <label for="wantsNewsletter">Sign up for Newsletter</label><br/><br/>
                 </div>
 
                 <label for="email">Email Address</label><br/>
@@ -102,14 +111,12 @@
 
                 <div class="sign-up">
                     <label for="password">Password</label><br/>
-                    <input text="password" type="password" id="password" name="password" required/>
+                    <input type="password" id="password" name="password" required/>
                 </div>
 
                 <div class="sign-up">
-                    <!--I was able to make sure the submit buttn would go to my thank you page from here but it messed with my columns from earlier in my cart. -->
-                    <!--<a href="https://failure2fly.github.io/d3-style-an-order-form/thanks.html"/>-->
+                    <!--I was able to make sure the submit button would go to my thank you page from here but it messed with my columns from earlier in my cart. -->
                    <button type="submit">Send</button>
-                       </a>
                 </div>
             </section>
 

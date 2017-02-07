@@ -10,26 +10,26 @@ nav {
     font-family: georgia;
     text-align: center;
     margin: 0 auto;
-    margin-width: 400px;
+    /*margin-width: 400px;*/
 }
 ul div {
     width: 119px;
-    border: solid 1px;
+    border: 1px solid;
     float: left;
     padding: 10px 0;
     color: white;
 }
 button {
     margin: 0px 40px 10px 40px;
-    align-self: center;
+    /*align-self: center;*/
     width: 100px;
 }
-/*.column {
+.column {
     width: 25%;
     display: inline-block; 
-    float: left;
+    /*float: left;*/
     text-align: left;
-}*/
+}
 
 form {
     display: flex;
@@ -56,7 +56,7 @@ form {
 h1 {
     font-family: 'Architects Daughter', cursive;
     text-align: center;
-    margin:10 auto;
+    /*margin:10 auto;*/
     font-size: 60px;
     color: White;
 }
@@ -65,12 +65,13 @@ h1 {
     padding: 5px;
     width: 100%;
 }
-
+/*.comments {
+    margin: 5px 0px 15px 0px;
+}*/
 .sign-up {
     padding: 5px;
     width: 100%;
 }
-
 .sign-up button{
     background:dodgerblue;
     font: white;
@@ -104,7 +105,7 @@ h2 {
 }
 .sign-up textarea {
     width: 100%;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
 }
 p {
     background:dodgerblue;
@@ -118,7 +119,7 @@ p {
     margin: 350px -300px 0px 550px;
     text-align: center;
 }
-p:hover {
+p:hover {    
     transform: scale(1.2);
     background-color: dodgerblue;
     animation-delay: -500ms;
